@@ -28,7 +28,7 @@
     <script src="https://unpkg.com/matter-js@0.17.1/build/matter.min.js"></script>
   </head>
   <style>
-    body {
+   body {
   font-family: "Poppins", sans-serif !important;
   background: #2c3639 !important;
 }
@@ -81,13 +81,11 @@ figure {
   text-decoration: none;
 }
 
-.audio-1,
-.audio-1:hover {
+.audio-1 {
   color: #51557e;
 }
 
-.audio-2,
-.audio-2:hover {
+.audio-2 {
   color: #816797;
 }
 
@@ -140,26 +138,42 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-/* Responsive design */
+@media (max-width: 1024px) {
+  h1.text {
+    font-size: 350%;
+  }
+  .switch {
+    font-size: 40px;
+  }
+  figure {
+    height: auto;
+    max-width: 80%;
+  }
+  .switc {
+    height: 28px;
+    width: 50px;
+  }
+  .slider:before {
+    height: 22px;
+    width: 22px;
+  }
+}
+
 @media (max-width: 768px) {
   h1.text {
     font-size: 300%;
   }
-
   .switch {
     font-size: 30px;
   }
-
   figure {
     height: auto;
     max-width: 100%;
   }
-
   .switc {
     height: 24px;
     width: 48px;
   }
-
   .slider:before {
     height: 20px;
     width: 20px;
